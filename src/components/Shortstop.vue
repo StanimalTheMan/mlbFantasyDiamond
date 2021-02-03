@@ -1,5 +1,5 @@
 <template>
-  <img :src="pic" alt="tatisJr" @click="selectShortstop" />
+  <img :src="pic" :alt="name" @click="selectShortstop" />
 </template>
 
 <script>

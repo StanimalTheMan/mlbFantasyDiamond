@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: relative;">
     <img
       alt="Fantasy Field"
       src="../assets/BaseballDiamond.png"
@@ -7,6 +7,7 @@
     />
     <!-- <img v-if="shortstop" :src="shortstopPic" /> -->
     <p class="shortstop">{{ shortstop }}</p>
+    <p class="startingPitcher">{{ startingPitcher }}</p>
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["fantasyTeam", "shortstop"]),
+    ...mapGetters(["fantasyTeam", "shortstop", "startingPitcher"]),
     // shortstopPic() {
     //   return `../assets/shortstops/${this.shortstop}.jpeg`;
     // },
@@ -33,7 +34,12 @@ export default {
 <style scoped>
 .shortstop {
   position: absolute;
-  left: 260px;
-  top: 260px;
+  left: 300px;
+  top: 200px;
+}
+.startingPitcher {
+  position: absolute;
+  left: 387px;
+  top: 314px;
 }
 </style>
