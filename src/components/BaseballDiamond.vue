@@ -8,6 +8,7 @@
     <!-- <img v-if="shortstop" :src="shortstopPic" /> -->
     <p class="shortstop">{{ shortstop }}</p>
     <p class="startingPitcher">{{ startingPitcher }}</p>
+    <p class="thirdBaseman">{{ thirdBaseman }}</p>
   </div>
 </template>
 
@@ -23,7 +24,12 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["fantasyTeam", "shortstop", "startingPitcher"]),
+    ...mapGetters([
+      "fantasyTeam",
+      "shortstop",
+      "thirdBaseman",
+      "startingPitcher",
+    ]),
     // shortstopPic() {
     //   return `../assets/shortstops/${this.shortstop}.jpeg`;
     // },
@@ -34,12 +40,17 @@ export default {
 <style scoped>
 .shortstop {
   position: absolute;
-  left: 300px;
-  top: 200px;
+  left: 40%;
+  top: 40%;
+}
+.thirdBaseman {
+  position: absolute;
+  left: 3%;
+  top: 40%;
 }
 .startingPitcher {
   position: absolute;
-  left: 387px;
-  top: 314px;
+  left: 50%;
+  top: 50%;
 }
 </style>

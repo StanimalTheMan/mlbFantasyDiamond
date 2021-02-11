@@ -9,8 +9,8 @@
 <script>
 import Shortstop from "./Shortstop";
 // inefficient probably to import all shortstop images here
-import lindorProPic from "../assets/shortstops/lindor.jpeg";
 import tatisJrProPic from "../assets/shortstops/tatisjr.jpeg";
+import lindorProPic from "../assets/shortstops/lindor.jpeg";
 export default {
   name: "Shortstops",
   components: {
@@ -18,8 +18,8 @@ export default {
   },
   beforeCreate() {
     this.shortstops = [
-      { name: "lindor", pic: lindorProPic },
       { name: "tatisjr", pic: tatisJrProPic },
+      { name: "lindor", pic: lindorProPic },
     ];
   },
 };

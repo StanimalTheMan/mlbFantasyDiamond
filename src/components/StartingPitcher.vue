@@ -1,5 +1,5 @@
 <template>
-  <img :src="pic" :alt="name" @click="selectStartingPitcher" />
+  <img :src="pic" :alt="name" @click="selectStartingPitcher" width="100" />
 </template>
 
 <script>

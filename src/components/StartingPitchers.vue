@@ -14,7 +14,7 @@
 
 <script>
 import StartingPitcher from "./StartingPitcher";
-// inefficient probably to import all shortstop images here
+// inefficient probably to import all starting pitcher images here
 import degromProPic from "../assets/startingPitchers/degrom.jpeg";
 import coleProPic from "../assets/startingPitchers/cole.jpeg";
 export default {

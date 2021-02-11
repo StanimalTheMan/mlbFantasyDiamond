@@ -3,6 +3,7 @@
     <baseball-diamond></baseball-diamond>
     <shortstops></shortstops>
     <starting-pitchers></starting-pitchers>
+    <third-basemen></third-basemen>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import BaseballDiamond from "./components/BaseballDiamond";
 import Shortstops from "./components/Shortstops";
 import StartingPitchers from "./components/StartingPitchers";
+import ThirdBasemen from "./components/ThirdBasemen";
 export default {
   name: "App",
   components: {
     BaseballDiamond,
     Shortstops,
     StartingPitchers,
+    ThirdBasemen,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 const state = {
-  fantasyTeam: { shortstop: null, startingPitcher: null },
+  fantasyTeam: { shortstop: null, thirdBaseman: null, startingPitcher: null },
 };
 
 const mutations = {
@@ -9,12 +9,18 @@ const mutations = {
   SET_STARTING_PITCHER(state, name) {
     state.fantasyTeam.startingPitcher = name;
   },
+  SET_THIRD_BASEMAN(state, name) {
+    state.fantasyTeam.thirdBaseman = name;
+  },
 };
 
 const actions = {
   // actions have access to context object
   setShortstop({ commit }, name) {
     commit("SET_SHORTSTOP", name);
+  },
+  setThirdBaseman({ commit }, name) {
+    commit("SET_THIRD_BASEMAN", name);
   },
   setStartingPitcher({ commit }, name) {
     commit("SET_STARTING_PITCHER", name);
@@ -27,6 +33,9 @@ const getters = {
   },
   shortstop: (state) => {
     return state.fantasyTeam.shortstop;
+  },
+  thirdBaseman: (state) => {
+    return state.fantasyTeam.thirdBaseman;
   },
   startingPitcher: (state) => {
     return state.fantasyTeam.startingPitcher;

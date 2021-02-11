@@ -1,5 +1,5 @@
 <template>
-  <img :src="pic" :alt="name" @click="selectShortstop" />
+  <img :src="pic" :alt="name" @click="selectShortstop" width="100" />
 </template>
 
 <script>
@@ -7,7 +7,6 @@ export default {
   props: ["name", "pic"],
   methods: {
     selectShortstop() {
-      console.log(this.pic);
       this.$store.dispatch("setShortstop", this.name);
     },
   },
