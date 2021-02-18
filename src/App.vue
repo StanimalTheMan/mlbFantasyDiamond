@@ -4,14 +4,18 @@
     <shortstops></shortstops>
     <starting-pitchers></starting-pitchers>
     <third-basemen></third-basemen>
+    <center-fielders></center-fielders>
+    <right-fielders></right-fielders>
   </div>
 </template>
 
 <script>
 import BaseballDiamond from "./components/BaseballDiamond";
-import Shortstops from "./components/Shortstops";
-import StartingPitchers from "./components/StartingPitchers";
-import ThirdBasemen from "./components/ThirdBasemen";
+import Shortstops from "./components/Shortstops/Shortstops";
+import StartingPitchers from "./components/StartingPitchers/StartingPitchers";
+import ThirdBasemen from "./components/ThirdBasemen/ThirdBasemen";
+import CenterFielders from "./components/CenterFielders/CenterFielders";
+import RightFielders from "./components/RightFielders/RightFielders";
 export default {
   name: "App",
   components: {
@@ -19,6 +23,8 @@ export default {
     Shortstops,
     StartingPitchers,
     ThirdBasemen,
+    CenterFielders,
+    RightFielders,
   },
 };
 </script>

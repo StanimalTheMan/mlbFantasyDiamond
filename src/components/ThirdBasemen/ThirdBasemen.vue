@@ -12,8 +12,8 @@
 <script>
 import ThirdBaseman from "./ThirdBaseman";
 // inefficient probably to import all third basemen images here
-import rendonProPic from "../assets/thirdBasemen/rendon.jpeg";
-import bregmanProPic from "../assets/thirdBasemen/bregman.jpeg";
+import rendonProPic from "../../assets/thirdBasemen/rendon.jpeg";
+import bregmanProPic from "../../assets/thirdBasemen/bregman.jpeg";
 export default {
   name: "Shortstops",
   components: {
