@@ -5,6 +5,7 @@ const state = {
     startingPitcher: null,
     centerFielder: null,
     rightFielder: null,
+    secondBaseman: null,
   },
 };
 
@@ -24,6 +25,9 @@ const mutations = {
   SET_RIGHT_FIELDER(state, name) {
     state.fantasyTeam.rightFielder = name;
   },
+  SET_SECOND_BASEMAN(state, name) {
+    state.fantasyTeam.secondBaseman = name;
+  },
 };
 
 const actions = {
@@ -42,6 +46,9 @@ const actions = {
   },
   setRightFielder({ commit }, name) {
     commit("SET_RIGHT_FIELDER", name);
+  },
+  setSecondBaseman({ commit }, name) {
+    commit("SET_SECOND_BASEMAN", name);
   },
 };
 
@@ -63,6 +70,9 @@ const getters = {
   },
   rightFielder: (state) => {
     return state.fantasyTeam.rightFielder;
+  },
+  secondBaseman: (state) => {
+    return state.fantasyTeam.secondBaseman;
   },
 };
 

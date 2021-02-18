@@ -6,6 +6,7 @@
     <third-basemen></third-basemen>
     <center-fielders></center-fielders>
     <right-fielders></right-fielders>
+    <second-basemen></second-basemen>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import StartingPitchers from "./components/StartingPitchers/StartingPitchers";
 import ThirdBasemen from "./components/ThirdBasemen/ThirdBasemen";
 import CenterFielders from "./components/CenterFielders/CenterFielders";
 import RightFielders from "./components/RightFielders/RightFielders";
+import SecondBasemen from "./components/SecondBasemen/SecondBasemen";
 export default {
   name: "App",
   components: {
@@ -25,6 +27,7 @@ export default {
     ThirdBasemen,
     CenterFielders,
     RightFielders,
+    SecondBasemen,
   },
 };
 </script>

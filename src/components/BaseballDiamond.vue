@@ -40,6 +40,13 @@
       class="rightFielder"
       width="50"
     />
+    <img
+      v-if="secondBasemanProPic"
+      :src="secondBasemanProPic"
+      alt="selectedSecondBasemanPicture"
+      class="secondBaseman"
+      width="50"
+    />
   </div>
 </template>
 
@@ -70,6 +77,11 @@ import bettsProPic from "../assets/rightFielders/betts.jpeg";
 import sotoProPic from "../assets/rightFielders/soto.jpeg";
 import acunaJrProPic from "../assets/rightFielders/acunajr.jpeg";
 
+// second basemen images
+import lemahieuProPic from "../assets/secondBasemen/lemahieu.jpeg";
+import mcneilProPic from "../assets/secondBasemen/mcneil.jpeg";
+import marteProPic from "../assets/secondBasemen/marte.jpeg";
+
 export default {
   name: "BaseballDiamond",
   methods: {
@@ -86,6 +98,7 @@ export default {
       "startingPitcher",
       "centerFielder",
       "rightFielder",
+      "secondBaseman",
     ]),
     shortstopProPic() {
       return this.shortstops[this.shortstop];
@@ -101,6 +114,9 @@ export default {
     },
     rightFielderProPic() {
       return this.rightFielders[this.rightFielder];
+    },
+    secondBasemanProPic() {
+      return this.secondBasemen[this.secondBaseman];
     },
   },
   beforeCreate() {
@@ -125,6 +141,11 @@ export default {
       betts: bettsProPic,
       soto: sotoProPic,
       acunaJr: acunaJrProPic,
+    };
+    this.secondBasemen = {
+      lemahieu: lemahieuProPic,
+      mcneil: mcneilProPic,
+      marte: marteProPic,
     };
   },
 };
@@ -163,6 +184,12 @@ export default {
   position: absolute;
   left: 60vw;
   top: 10vh;
+  justify-content: center;
+}
+.secondBaseman {
+  position: absolute;
+  left: 52vw;
+  top: 25vh;
   justify-content: center;
 }
 </style>
