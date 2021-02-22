@@ -10,6 +10,7 @@
       <second-basemen></second-basemen>
       <left-fielders></left-fielders>
       <first-basemen></first-basemen>
+      <catchers></catchers>
     </div>
   </div>
 </template>
@@ -24,6 +25,7 @@ import RightFielders from "./components/RightFielders/RightFielders";
 import SecondBasemen from "./components/SecondBasemen/SecondBasemen";
 import LeftFielders from "./components/LeftFielders/LeftFielders";
 import FirstBasemen from "./components/FirstBasemen/FirstBasemen";
+import Catchers from "./components/Catchers/Catchers";
 
 export default {
   name: "App",
@@ -37,6 +39,7 @@ export default {
     SecondBasemen,
     LeftFielders,
     FirstBasemen,
+    Catchers,
   },
 };
 </script>

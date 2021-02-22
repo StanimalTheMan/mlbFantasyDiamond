@@ -8,6 +8,7 @@ const state = {
     secondBaseman: null,
     leftFielder: null,
     firstBaseman: null,
+    catcher: null,
   },
 };
 
@@ -36,6 +37,9 @@ const mutations = {
   SET_FIRST_BASEMAN(state, name) {
     state.fantasyTeam.firstBaseman = name;
   },
+  SET_CATCHER(state, name) {
+    state.fantasyTeam.catcher = name;
+  },
 };
 
 const actions = {
@@ -63,6 +67,9 @@ const actions = {
   },
   setFirstBaseman({ commit }, name) {
     commit("SET_FIRST_BASEMAN", name);
+  },
+  setCatcher({ commit }, name) {
+    commit("SET_CATCHER", name);
   },
 };
 
@@ -93,6 +100,9 @@ const getters = {
   },
   firstBaseman: (state) => {
     return state.fantasyTeam.firstBaseman;
+  },
+  catcher: (state) => {
+    return state.fantasyTeam.catcher;
   },
 };
 

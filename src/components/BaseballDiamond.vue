@@ -62,6 +62,13 @@
       class="firstBaseman"
       width="50"
     />
+    <img
+      v-if="catcherProPic"
+      :src="catcherProPic"
+      alt="selectedCatcherPicture"
+      class="catcher"
+      width="50"
+    />
   </div>
 </template>
 
@@ -109,6 +116,13 @@ import abreuProPic from "../assets/firstBasemen/abreu.jpeg";
 import voitProPic from "../assets/firstBasemen/voit.jpeg";
 import muncyProPic from "../assets/firstBasemen/muncy.jpeg";
 
+// catchers images
+import realmutoProPic from "../assets/catchers/realmuto.jpeg";
+import grandalProPic from "../assets/catchers/grandal.jpeg";
+import smithProPic from "../assets/catchers/smith.jpeg";
+import contrerasProPic from "../assets/catchers/contreras.jpeg";
+import perezProPic from "../assets/catchers/perez.jpeg";
+
 export default {
   name: "BaseballDiamond",
   methods: {
@@ -128,6 +142,7 @@ export default {
       "secondBaseman",
       "leftFielder",
       "firstBaseman",
+      "catcher",
     ]),
     shortstopProPic() {
       return this.shortstops[this.shortstop];
@@ -152,6 +167,9 @@ export default {
     },
     firstBasemanProPic() {
       return this.firstBasemen[this.firstBaseman];
+    },
+    catcherProPic() {
+      return this.catchers[this.catcher];
     },
   },
   beforeCreate() {
@@ -193,6 +211,13 @@ export default {
       abreu: abreuProPic,
       voit: voitProPic,
       muncy: muncyProPic,
+    };
+    this.catchers = {
+      realmuto: realmutoProPic,
+      grandal: grandalProPic,
+      smith: smithProPic,
+      contreras: contrerasProPic,
+      perez: perezProPic,
     };
   },
 };
@@ -242,5 +267,10 @@ h1 {
   position: absolute;
   left: 55vw;
   top: 30vh;
+}
+.catcher {
+  position: absolute;
+  left: 48vw;
+  top: 45vh;
 }
 </style>
