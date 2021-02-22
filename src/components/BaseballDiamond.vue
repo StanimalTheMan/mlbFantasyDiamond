@@ -98,6 +98,10 @@ import springerProPic from "../assets/centerFielders/springer.jpeg";
 import bettsProPic from "../assets/rightFielders/betts.jpeg";
 import sotoProPic from "../assets/rightFielders/soto.jpeg";
 import acunaJrProPic from "../assets/rightFielders/acunajr.jpeg";
+import judgeProPic from "../assets/rightFielders/judge.jpeg";
+import harperProPic from "../assets/rightFielders/harper.jpeg";
+import confortoProPic from "../assets/rightFielders/conforto.jpeg";
+import blackmonProPic from "../assets/rightFielders/blackmon.jpeg";
 
 // second basemen images
 import lemahieuProPic from "../assets/secondBasemen/lemahieu.jpeg";
@@ -194,6 +198,10 @@ export default {
       betts: bettsProPic,
       soto: sotoProPic,
       acunaJr: acunaJrProPic,
+      judge: judgeProPic,
+      harper: harperProPic,
+      conforto: confortoProPic,
+      blackmon: blackmonProPic,
     };
     this.secondBasemen = {
       lemahieu: lemahieuProPic,

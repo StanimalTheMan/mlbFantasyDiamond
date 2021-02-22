@@ -15,6 +15,11 @@ import RightFielder from "./RightFielder";
 import bettsProPic from "../../assets/rightFielders/betts.jpeg";
 import sotoProPic from "../../assets/rightFielders/soto.jpeg";
 import acunaJrProPic from "../../assets/rightFielders/acunajr.jpeg";
+import judgeProPic from "../../assets/rightFielders/judge.jpeg";
+import harperProPic from "../../assets/rightFielders/harper.jpeg";
+import confortoProPic from "../../assets/rightFielders/conforto.jpeg";
+import blackmonProPic from "../../assets/rightFielders/blackmon.jpeg";
+
 export default {
   name: "RightFielders",
   components: {
@@ -25,6 +30,10 @@ export default {
       { name: "betts", pic: bettsProPic },
       { name: "soto", pic: sotoProPic },
       { name: "acunaJr", pic: acunaJrProPic },
+      { name: "judge", pic: judgeProPic },
+      { name: "harper", pic: harperProPic },
+      { name: "conforto", pic: confortoProPic },
+      { name: "blackmon", pic: blackmonProPic },
     ];
   },
 };
