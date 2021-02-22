@@ -92,6 +92,18 @@ import andersonProPic from "../assets/shortstops/anderson.jpeg";
 // pitcher images
 import degromProPic from "../assets/startingPitchers/degrom.jpeg";
 import coleProPic from "../assets/startingPitchers/cole.jpeg";
+import bieberProPic from "../assets/startingPitchers/bieber.jpeg";
+import bauerProPic from "../assets/startingPitchers/bauer.jpeg";
+import darvishProPic from "../assets/startingPitchers/darvish.jpeg";
+import buehlerProPic from "../assets/startingPitchers/buehler.jpeg";
+import giolitoProPic from "../assets/startingPitchers/giolito.jpeg";
+import nolaProPic from "../assets/startingPitchers/nola.jpeg";
+import scherzerProPic from "../assets/startingPitchers/scherzer.jpeg";
+import kershawProPic from "../assets/startingPitchers/kershaw.jpeg";
+import snellProPic from "../assets/startingPitchers/snell.jpeg";
+import flahertyProPic from "../assets/startingPitchers/flaherty.jpeg";
+import castilloProPic from "../assets/startingPitchers/castillo.jpeg";
+import ryuProPic from "../assets/startingPitchers/ryu.jpeg";
 
 // third basemen images
 import rendonProPic from "../assets/thirdBasemen/rendon.jpeg";
@@ -206,6 +218,18 @@ export default {
     this.startingPitchers = {
       degrom: degromProPic,
       cole: coleProPic,
+      bieber: bieberProPic,
+      bauer: bauerProPic,
+      darvish: darvishProPic,
+      buehler: buehlerProPic,
+      giolito: giolitoProPic,
+      nola: nolaProPic,
+      scherzer: scherzerProPic,
+      kershaw: kershawProPic,
+      snell: snellProPic,
+      flaherty: flahertyProPic,
+      castillo: castilloProPic,
+      ryu: ryuProPic,
     };
     this.thirdBasemen = {
       rendon: rendonProPic,
