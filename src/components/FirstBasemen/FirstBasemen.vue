@@ -17,6 +17,7 @@ import goldschmidtProPic from "../../assets/firstBasemen/goldschmidt.jpeg";
 import abreuProPic from "../../assets/firstBasemen/abreu.jpeg";
 import voitProPic from "../../assets/firstBasemen/voit.jpeg";
 import muncyProPic from "../../assets/firstBasemen/muncy.jpeg";
+import alonsoProPic from "../../assets/firstBasemen/alonso.jpeg";
 export default {
   name: "FirstBasemen",
   components: {
@@ -29,6 +30,7 @@ export default {
       { name: "abreu", pic: abreuProPic },
       { name: "voit", pic: voitProPic },
       { name: "muncy", pic: muncyProPic },
+      { name: "alonso", pic: alonsoProPic },
     ];
   },
 };

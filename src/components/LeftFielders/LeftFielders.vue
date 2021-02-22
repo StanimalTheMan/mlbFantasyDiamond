@@ -15,6 +15,8 @@ import LeftFielder from "./LeftFielder";
 import yelichProPic from "../../assets/leftFielders/yelich.jpeg";
 import brantleyProPic from "../../assets/leftFielders/brantley.jpeg";
 import ozunaProPic from "../../assets/leftFielders/ozuna.jpeg";
+import smithProPic from "../../assets/leftFielders/smith.jpeg";
+import jimenezProPic from "../../assets/leftFielders/jimenez.jpeg";
 export default {
   name: "LeftFielders",
   components: {
@@ -25,6 +27,8 @@ export default {
       { name: "yelich", pic: yelichProPic },
       { name: "brantley", pic: brantleyProPic },
       { name: "ozuna", pic: ozunaProPic },
+      { name: "smith", pic: smithProPic },
+      { name: "jimenez", pic: jimenezProPic },
     ];
   },
 };

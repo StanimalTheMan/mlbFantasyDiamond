@@ -138,6 +138,8 @@ import marteProPic from "../assets/secondBasemen/marte.jpeg";
 import yelichProPic from "../assets/leftFielders/yelich.jpeg";
 import brantleyProPic from "../assets/leftFielders/brantley.jpeg";
 import ozunaProPic from "../assets/leftFielders/ozuna.jpeg";
+import dSmithProPic from "../assets/leftFielders/smith.jpeg";
+import jimenezProPic from "../assets/leftFielders/jimenez.jpeg";
 
 // first basemen images
 import freemanProPic from "../assets/firstBasemen/freeman.jpeg";
@@ -145,6 +147,7 @@ import goldschmidtProPic from "../assets/firstBasemen/goldschmidt.jpeg";
 import abreuProPic from "../assets/firstBasemen/abreu.jpeg";
 import voitProPic from "../assets/firstBasemen/voit.jpeg";
 import muncyProPic from "../assets/firstBasemen/muncy.jpeg";
+import alonsoProPic from "../assets/firstBasemen/alonso.jpeg";
 
 // catchers images
 import realmutoProPic from "../assets/catchers/realmuto.jpeg";
@@ -264,6 +267,8 @@ export default {
       yelich: yelichProPic,
       brantley: brantleyProPic,
       ozuna: ozunaProPic,
+      smith: dSmithProPic,
+      jimenez: jimenezProPic,
     };
     this.firstBasemen = {
       freeman: freemanProPic,
@@ -271,6 +276,7 @@ export default {
       abreu: abreuProPic,
       voit: voitProPic,
       muncy: muncyProPic,
+      alonso: alonsoProPic,
     };
     this.catchers = {
       realmuto: realmutoProPic,
