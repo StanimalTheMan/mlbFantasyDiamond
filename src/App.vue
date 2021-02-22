@@ -1,12 +1,15 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <baseball-diamond></baseball-diamond>
-    <shortstops></shortstops>
-    <starting-pitchers></starting-pitchers>
-    <third-basemen></third-basemen>
-    <center-fielders></center-fielders>
-    <right-fielders></right-fielders>
-    <second-basemen></second-basemen>
+    <div class="container2">
+      <shortstops></shortstops>
+      <starting-pitchers></starting-pitchers>
+      <third-basemen></third-basemen>
+      <center-fielders></center-fielders>
+      <right-fielders></right-fielders>
+      <second-basemen></second-basemen>
+      <left-fielders></left-fielders>
+    </div>
   </div>
 </template>
 
@@ -18,6 +21,8 @@ import ThirdBasemen from "./components/ThirdBasemen/ThirdBasemen";
 import CenterFielders from "./components/CenterFielders/CenterFielders";
 import RightFielders from "./components/RightFielders/RightFielders";
 import SecondBasemen from "./components/SecondBasemen/SecondBasemen";
+import LeftFielders from "./components/LeftFielders/LeftFielders";
+
 export default {
   name: "App",
   components: {
@@ -28,17 +33,28 @@ export default {
     CenterFielders,
     RightFielders,
     SecondBasemen,
+    LeftFielders,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(36, 35, 0, 1) 0%,
+    rgba(121, 9, 12, 1) 0%,
+    rgba(0, 53, 255, 1) 100%
+  );
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+.container,
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div>
+    <h1>MLB Fantasy Diamond</h1>
     <img
       alt="Fantasy Field"
       src="../assets/BaseballDiamond.png"
@@ -47,6 +48,13 @@
       class="secondBaseman"
       width="50"
     />
+    <img
+      v-if="leftFielderProPic"
+      :src="leftFielderProPic"
+      alt="selectedLeftFielderPicture"
+      class="leftFielder"
+      width="50"
+    />
   </div>
 </template>
 
@@ -82,6 +90,11 @@ import lemahieuProPic from "../assets/secondBasemen/lemahieu.jpeg";
 import mcneilProPic from "../assets/secondBasemen/mcneil.jpeg";
 import marteProPic from "../assets/secondBasemen/marte.jpeg";
 
+// left fielder images
+import yelichProPic from "../assets/leftFielders/yelich.jpeg";
+import brantleyProPic from "../assets/leftFielders/brantley.jpeg";
+import ozunaProPic from "../assets/leftFielders/ozuna.jpeg";
+
 export default {
   name: "BaseballDiamond",
   methods: {
@@ -99,6 +112,7 @@ export default {
       "centerFielder",
       "rightFielder",
       "secondBaseman",
+      "leftFielder",
     ]),
     shortstopProPic() {
       return this.shortstops[this.shortstop];
@@ -117,6 +131,9 @@ export default {
     },
     secondBasemanProPic() {
       return this.secondBasemen[this.secondBaseman];
+    },
+    leftFielderProPic() {
+      return this.leftFielders[this.leftFielder];
     },
   },
   beforeCreate() {
@@ -147,14 +164,19 @@ export default {
       mcneil: mcneilProPic,
       marte: marteProPic,
     };
+    this.leftFielders = {
+      yelich: yelichProPic,
+      brantley: brantleyProPic,
+      ozuna: ozunaProPic,
+    };
   },
 };
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  justify-content: center;
+h1 {
+  text-align: center;
+  color: white;
 }
 .shortstop {
   position: absolute;
@@ -165,7 +187,7 @@ export default {
 .startingPitcher {
   position: absolute;
   left: 48vw;
-  top: 38vh;
+  top: 35vh;
   justify-content: center;
 }
 .thirdBaseman {
@@ -190,6 +212,12 @@ export default {
   position: absolute;
   left: 52vw;
   top: 25vh;
+  justify-content: center;
+}
+.leftFielder {
+  position: absolute;
+  left: 35vw;
+  top: 10vh;
   justify-content: center;
 }
 </style>
