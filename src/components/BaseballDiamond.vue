@@ -80,6 +80,14 @@ import { mapGetters } from "vuex";
 // shortstop images
 import tatisjrProPic from "../assets/shortstops/tatisjr.jpeg";
 import lindorProPic from "../assets/shortstops/lindor.jpeg";
+import storyProPic from "../assets/shortstops/story.jpeg";
+import bogaertsProPic from "../assets/shortstops/bogaerts.jpeg";
+import turnerProPic from "../assets/shortstops/turner.jpeg";
+import seagerProPic from "../assets/shortstops/seager.jpeg";
+import correaProPic from "../assets/shortstops/correa.jpeg";
+import bichetteProPic from "../assets/shortstops/bichette.jpeg";
+import baezProPic from "../assets/shortstops/baez.jpeg";
+import andersonProPic from "../assets/shortstops/anderson.jpeg";
 
 // pitcher images
 import degromProPic from "../assets/startingPitchers/degrom.jpeg";
@@ -88,6 +96,12 @@ import coleProPic from "../assets/startingPitchers/cole.jpeg";
 // third basemen images
 import rendonProPic from "../assets/thirdBasemen/rendon.jpeg";
 import bregmanProPic from "../assets/thirdBasemen/bregman.jpeg";
+import arenadoProPic from "../assets/thirdBasemen/arenado.jpeg";
+import ramirezProPic from "../assets/thirdBasemen/ramirez.jpeg";
+import machadoProPic from "../assets/thirdBasemen/machado.jpeg";
+import jTurnerProPic from "../assets/thirdBasemen/turner.jpeg";
+import chapmanProPic from "../assets/thirdBasemen/chapman.jpeg";
+import bryantProPic from "../assets/thirdBasemen/bryant.jpeg";
 
 // center fielder images
 import troutProPic from "../assets/centerFielders/trout.jpeg";
@@ -180,6 +194,14 @@ export default {
     this.shortstops = {
       tatisjr: tatisjrProPic,
       lindor: lindorProPic,
+      story: storyProPic,
+      bogaerts: bogaertsProPic,
+      turner: turnerProPic,
+      seager: seagerProPic,
+      correa: correaProPic,
+      bichette: bichetteProPic,
+      baez: baezProPic,
+      anderson: andersonProPic,
     };
     this.startingPitchers = {
       degrom: degromProPic,
@@ -188,6 +210,12 @@ export default {
     this.thirdBasemen = {
       rendon: rendonProPic,
       bregman: bregmanProPic,
+      arenado: arenadoProPic,
+      ramirez: ramirezProPic,
+      machado: machadoProPic,
+      turner: jTurnerProPic,
+      chapman: chapmanProPic,
+      bryant: bryantProPic,
     };
     this.centerFielders = {
       trout: troutProPic,
