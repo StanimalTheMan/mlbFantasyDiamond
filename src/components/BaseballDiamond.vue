@@ -55,6 +55,13 @@
       class="leftFielder"
       width="50"
     />
+    <img
+      v-if="firstBasemanProPic"
+      :src="firstBasemanProPic"
+      alt="selectedFirstBasemanPicture"
+      class="firstBaseman"
+      width="50"
+    />
   </div>
 </template>
 
@@ -95,6 +102,13 @@ import yelichProPic from "../assets/leftFielders/yelich.jpeg";
 import brantleyProPic from "../assets/leftFielders/brantley.jpeg";
 import ozunaProPic from "../assets/leftFielders/ozuna.jpeg";
 
+// first basemen images
+import freemanProPic from "../assets/firstBasemen/freeman.jpeg";
+import goldschmidtProPic from "../assets/firstBasemen/goldschmidt.jpeg";
+import abreuProPic from "../assets/firstBasemen/abreu.jpeg";
+import voitProPic from "../assets/firstBasemen/voit.jpeg";
+import muncyProPic from "../assets/firstBasemen/muncy.jpeg";
+
 export default {
   name: "BaseballDiamond",
   methods: {
@@ -113,6 +127,7 @@ export default {
       "rightFielder",
       "secondBaseman",
       "leftFielder",
+      "firstBaseman",
     ]),
     shortstopProPic() {
       return this.shortstops[this.shortstop];
@@ -134,6 +149,9 @@ export default {
     },
     leftFielderProPic() {
       return this.leftFielders[this.leftFielder];
+    },
+    firstBasemanProPic() {
+      return this.firstBasemen[this.firstBaseman];
     },
   },
   beforeCreate() {
@@ -169,6 +187,13 @@ export default {
       brantley: brantleyProPic,
       ozuna: ozunaProPic,
     };
+    this.firstBasemen = {
+      freeman: freemanProPic,
+      goldschmidt: goldschmidtProPic,
+      abreu: abreuProPic,
+      voit: voitProPic,
+      muncy: muncyProPic,
+    };
   },
 };
 </script>
@@ -182,42 +207,40 @@ h1 {
   position: absolute;
   left: 45vw;
   top: 25vh;
-  justify-content: center;
 }
 .startingPitcher {
   position: absolute;
   left: 48vw;
   top: 35vh;
-  justify-content: center;
 }
 .thirdBaseman {
   position: absolute;
   left: 40vw;
   top: 30vh;
-  justify-content: center;
 }
 .centerFielder {
   position: absolute;
   left: 48vw;
   top: 10vh;
-  justify-content: center;
 }
 .rightFielder {
   position: absolute;
   left: 60vw;
   top: 10vh;
-  justify-content: center;
 }
 .secondBaseman {
   position: absolute;
   left: 52vw;
   top: 25vh;
-  justify-content: center;
 }
 .leftFielder {
   position: absolute;
   left: 35vw;
   top: 10vh;
-  justify-content: center;
+}
+.firstBaseman {
+  position: absolute;
+  left: 55vw;
+  top: 30vh;
 }
 </style>

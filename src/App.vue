@@ -9,6 +9,7 @@
       <right-fielders></right-fielders>
       <second-basemen></second-basemen>
       <left-fielders></left-fielders>
+      <first-basemen></first-basemen>
     </div>
   </div>
 </template>
@@ -22,6 +23,7 @@ import CenterFielders from "./components/CenterFielders/CenterFielders";
 import RightFielders from "./components/RightFielders/RightFielders";
 import SecondBasemen from "./components/SecondBasemen/SecondBasemen";
 import LeftFielders from "./components/LeftFielders/LeftFielders";
+import FirstBasemen from "./components/FirstBasemen/FirstBasemen";
 
 export default {
   name: "App",
@@ -34,6 +36,7 @@ export default {
     RightFielders,
     SecondBasemen,
     LeftFielders,
+    FirstBasemen,
   },
 };
 </script>

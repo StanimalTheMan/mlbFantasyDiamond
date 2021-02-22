@@ -11,7 +11,7 @@
 
 <script>
 import SecondBaseman from "./SecondBaseman";
-// inefficient probably to import all shortstop images here
+// inefficient probably to import all second basemen images here
 import lemahieuProPic from "../../assets/secondBasemen/lemahieu.jpeg";
 import mcneilProPic from "../../assets/secondBasemen/mcneil.jpeg";
 import marteProPic from "../../assets/secondBasemen/marte.jpeg";

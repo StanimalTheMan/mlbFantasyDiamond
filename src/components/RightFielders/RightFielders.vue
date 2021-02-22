@@ -11,7 +11,7 @@
 
 <script>
 import RightFielder from "./RightFielder";
-// inefficient probably to import all shortstop images here
+// inefficient probably to import all right fielders images here
 import bettsProPic from "../../assets/rightFielders/betts.jpeg";
 import sotoProPic from "../../assets/rightFielders/soto.jpeg";
 import acunaJrProPic from "../../assets/rightFielders/acunajr.jpeg";

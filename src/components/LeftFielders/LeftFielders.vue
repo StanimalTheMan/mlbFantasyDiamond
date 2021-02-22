@@ -11,7 +11,7 @@
 
 <script>
 import LeftFielder from "./LeftFielder";
-// inefficient probably to import all shortstop images here
+// inefficient probably to import all left fielders images here
 import yelichProPic from "../../assets/leftFielders/yelich.jpeg";
 import brantleyProPic from "../../assets/leftFielders/brantley.jpeg";
 import ozunaProPic from "../../assets/leftFielders/ozuna.jpeg";
