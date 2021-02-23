@@ -83,6 +83,13 @@
       class="reliefPitcher"
       width="50"
     />
+    <img
+      v-if="designatedHitterProPic"
+      :src="designatedHitterProPic"
+      alt="selectedDesignatedHitterPicture"
+      class="designatedHitter"
+      width="50"
+    />
   </div>
 </template>
 
@@ -181,6 +188,16 @@ import diazProPic from "../assets/reliefPitchers/diaz.jpeg";
 import haderProPic from "../assets/reliefPitchers/hader.jpeg";
 import iglesiasProPic from "../assets/reliefPitchers/iglesias.jpeg";
 
+// designated hitter images
+import alvarezProPic from "../assets/designatedHitters/alvarez.jpeg";
+import martinezProPic from "../assets/designatedHitters/martinez.jpeg";
+import cruzProPic from "../assets/designatedHitters/cruz.jpeg";
+import stantonProPic from "../assets/designatedHitters/stanton.jpeg";
+import reyesProPic from "../assets/designatedHitters/reyes.jpeg";
+import ohtaniProPic from "../assets/designatedHitters/ohtani.jpeg";
+import meadowsProPic from "../assets/designatedHitters/meadows.jpeg";
+import solerProPic from "../assets/designatedHitters/soler.jpeg";
+
 export default {
   name: "BaseballDiamond",
   methods: {
@@ -202,6 +219,7 @@ export default {
       "firstBaseman",
       "catcher",
       "reliefPitcher",
+      "designatedHitter",
     ]),
     shortstopProPic() {
       return this.shortstops[this.shortstop];
@@ -232,6 +250,9 @@ export default {
     },
     reliefPitcherProPic() {
       return this.reliefPitchers[this.reliefPitcher];
+    },
+    designatedHitterProPic() {
+      return this.designatedHitters[this.designatedHitter];
     },
   },
   beforeCreate() {
@@ -325,6 +346,16 @@ export default {
       hader: haderProPic,
       iglesias: iglesiasProPic,
     };
+    this.designatedHitters = {
+      alvarez: alvarezProPic,
+      martinez: martinezProPic,
+      cruz: cruzProPic,
+      stanton: stantonProPic,
+      reyes: reyesProPic,
+      ohtani: ohtaniProPic,
+      meadows: meadowsProPic,
+      soler: solerProPic,
+    };
   },
 };
 </script>
@@ -382,6 +413,11 @@ h1 {
 .reliefPitcher {
   position: absolute;
   left: 40vw;
+  top: 45vh;
+}
+.designatedHitter {
+  position: absolute;
+  left: 57vw;
   top: 45vh;
 }
 .mlblogo {
