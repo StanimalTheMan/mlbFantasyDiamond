@@ -1,6 +1,13 @@
 <template>
   <div>
-    <h1>MLB Fantasy Diamond</h1>
+    <div>
+      <img
+        src="../assets/mlblogo.webp"
+        class="mlblogo"
+        width="50"
+        height="50"
+      />
+    </div>
     <img
       alt="Fantasy Field"
       src="../assets/BaseballDiamond.png"
@@ -67,6 +74,13 @@
       :src="catcherProPic"
       alt="selectedCatcherPicture"
       class="catcher"
+      width="50"
+    />
+    <img
+      v-if="reliefPitcherProPic"
+      :src="reliefPitcherProPic"
+      alt="selectedReliefPitcherPicture"
+      class="reliefPitcher"
       width="50"
     />
   </div>
@@ -160,6 +174,13 @@ import smithProPic from "../assets/catchers/smith.jpeg";
 import contrerasProPic from "../assets/catchers/contreras.jpeg";
 import perezProPic from "../assets/catchers/perez.jpeg";
 
+// relief pitcher images
+import hendriksProPic from "../assets/reliefPitchers/hendriks.jpeg";
+import aChapmanProPic from "../assets/reliefPitchers/chapman.jpeg";
+import diazProPic from "../assets/reliefPitchers/diaz.jpeg";
+import haderProPic from "../assets/reliefPitchers/hader.jpeg";
+import iglesiasProPic from "../assets/reliefPitchers/iglesias.jpeg";
+
 export default {
   name: "BaseballDiamond",
   methods: {
@@ -180,6 +201,7 @@ export default {
       "leftFielder",
       "firstBaseman",
       "catcher",
+      "reliefPitcher",
     ]),
     shortstopProPic() {
       return this.shortstops[this.shortstop];
@@ -207,6 +229,9 @@ export default {
     },
     catcherProPic() {
       return this.catchers[this.catcher];
+    },
+    reliefPitcherProPic() {
+      return this.reliefPitchers[this.reliefPitcher];
     },
   },
   beforeCreate() {
@@ -293,6 +318,13 @@ export default {
       contreras: contrerasProPic,
       perez: perezProPic,
     };
+    this.reliefPitchers = {
+      hendriks: hendriksProPic,
+      chapman: aChapmanProPic,
+      diaz: diazProPic,
+      hader: haderProPic,
+      iglesias: iglesiasProPic,
+    };
   },
 };
 </script>
@@ -346,5 +378,15 @@ h1 {
   position: absolute;
   left: 48vw;
   top: 45vh;
+}
+.reliefPitcher {
+  position: absolute;
+  left: 40vw;
+  top: 45vh;
+}
+.mlblogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

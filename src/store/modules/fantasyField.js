@@ -9,6 +9,8 @@ const state = {
     leftFielder: null,
     firstBaseman: null,
     catcher: null,
+    reliefPitcher: null,
+    designatedHitter: null,
   },
 };
 
@@ -40,6 +42,12 @@ const mutations = {
   SET_CATCHER(state, name) {
     state.fantasyTeam.catcher = name;
   },
+  SET_RELIEF_PITCHER(state, name) {
+    state.fantasyTeam.reliefPitcher = name;
+  },
+  SET_DESIGNATED_HITTER(state, name) {
+    state.fantasyTeam.designatedHitter = name;
+  },
 };
 
 const actions = {
@@ -70,6 +78,12 @@ const actions = {
   },
   setCatcher({ commit }, name) {
     commit("SET_CATCHER", name);
+  },
+  setReliefPitcher({ commit }, name) {
+    commit("SET_RELIEF_PITCHER", name);
+  },
+  setDesignatedHitter({ commit }, name) {
+    commit("SET_DESIGNATED_HITTER", name);
   },
 };
 
@@ -103,6 +117,12 @@ const getters = {
   },
   catcher: (state) => {
     return state.fantasyTeam.catcher;
+  },
+  reliefPitcher: (state) => {
+    return state.fantasyTeam.reliefPitcher;
+  },
+  designatedHitter: (state) => {
+    return state.fantasyTeam.designatedHitter;
   },
 };
 
