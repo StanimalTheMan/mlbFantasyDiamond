@@ -15,6 +15,10 @@ import SecondBaseman from "./SecondBaseman";
 import lemahieuProPic from "../../assets/secondBasemen/lemahieu.jpeg";
 import mcneilProPic from "../../assets/secondBasemen/mcneil.jpeg";
 import marteProPic from "../../assets/secondBasemen/marte.jpeg";
+import loweProPic from "../../assets/secondBasemen/lowe.jpeg";
+import biggioProPic from "../../assets/secondBasemen/biggio.jpeg";
+import altuveProPic from "../../assets/secondBasemen/altuve.jpeg";
+import albiesProPic from "../../assets/secondBasemen/albies.jpeg";
 export default {
   name: "SecondBasemen",
   components: {
@@ -25,6 +29,10 @@ export default {
       { name: "lemahieu", pic: lemahieuProPic },
       { name: "mcneil", pic: mcneilProPic },
       { name: "marte", pic: marteProPic },
+      { name: "lowe", pic: loweProPic },
+      { name: "biggio", pic: biggioProPic },
+      { name: "altuve", pic: altuveProPic },
+      { name: "albies", pic: albiesProPic },
     ];
   },
 };

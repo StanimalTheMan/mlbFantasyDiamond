@@ -133,6 +133,10 @@ import blackmonProPic from "../assets/rightFielders/blackmon.jpeg";
 import lemahieuProPic from "../assets/secondBasemen/lemahieu.jpeg";
 import mcneilProPic from "../assets/secondBasemen/mcneil.jpeg";
 import marteProPic from "../assets/secondBasemen/marte.jpeg";
+import loweProPic from "../assets/secondBasemen/lowe.jpeg";
+import biggioProPic from "../assets/secondBasemen/biggio.jpeg";
+import altuveProPic from "../assets/secondBasemen/altuve.jpeg";
+import albiesProPic from "../assets/secondBasemen/albies.jpeg";
 
 // left fielder images
 import yelichProPic from "../assets/leftFielders/yelich.jpeg";
@@ -262,6 +266,10 @@ export default {
       lemahieu: lemahieuProPic,
       mcneil: mcneilProPic,
       marte: marteProPic,
+      lowe: loweProPic,
+      biggio: biggioProPic,
+      altuve: altuveProPic,
+      albies: albiesProPic,
     };
     this.leftFielders = {
       yelich: yelichProPic,
