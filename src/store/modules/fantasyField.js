@@ -1,3 +1,4 @@
+import Vue from "vue";
 const state = {
   fantasyTeam: {
     shortstop: null,
@@ -15,6 +16,9 @@ const state = {
 };
 
 const mutations = {
+  SET_FANTASY_TEAM(state, fantasyField) {
+    state.fantasyTeam = fantasyField;
+  },
   SET_SHORTSTOP(state, name) {
     state.fantasyTeam.shortstop = name;
   },
@@ -51,6 +55,17 @@ const mutations = {
 };
 
 const actions = {
+  loadData({ commit }) {
+    Vue.http
+      .get("data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data) {
+          const fantasyTeam = data.fantasyField;
+          commit("SET_FANTASY_TEAM", fantasyTeam);
+        }
+      });
+  },
   // actions have access to context object
   setShortstop({ commit }, name) {
     commit("SET_SHORTSTOP", name);

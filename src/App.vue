@@ -47,6 +47,9 @@ export default {
     ReliefPitchers,
     DesignatedHitters,
   },
+  created() {
+    this.$store.dispatch("loadData");
+  },
 };
 </script>
 

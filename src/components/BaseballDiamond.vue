@@ -7,12 +7,9 @@
         width="50"
         height="50"
       />
+      <button @click="saveData">Save</button>
     </div>
-    <img
-      alt="Fantasy Field"
-      src="../assets/BaseballDiamond.png"
-      @click="getMouseCoordinates"
-    />
+    <img alt="Fantasy Field" src="../assets/BaseballDiamond.png" />
     <img
       v-if="shortstopProPic"
       :src="shortstopProPic"
@@ -201,9 +198,11 @@ import solerProPic from "../assets/designatedHitters/soler.jpeg";
 export default {
   name: "BaseballDiamond",
   methods: {
-    getMouseCoordinates(event) {
-      console.log(event.clientX);
-      console.log(event.clientY);
+    saveData() {
+      const data = {
+        fantasyField: this.$store.getters.fantasyTeam,
+      };
+      this.$http.put("data.json", data);
     },
   },
   computed: {
