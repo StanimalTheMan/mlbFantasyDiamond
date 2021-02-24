@@ -2,7 +2,7 @@
 
 ## About
 
-This simple web app lets you select the baseball players you want on the field and save them. You can always change your mind and update your preferences.
+This simple web app lets you select the baseball players you want on the field and save them. You can always change your mind and update your preferences. It can be found on http://mlbfantasy-deploy.s3-website.us-east-2.amazonaws.com/ as a demo.
 
 ## Inspiration
 
