@@ -7,7 +7,12 @@ This simple web app lets you select the baseball players you want on the field a
 ## Inspiration
 
 The app uses this depth chart image as its inspiration.
-![img](/src/assets/sampleDepthChart.png)
+![inspiration](/src/assets/sampleDepthChart.png)
+
+## Application Snapshot
+
+The app can be seen below:
+![app](/src/assets/app.png)
 
 ## Project setup
 
