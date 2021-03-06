@@ -360,6 +360,9 @@ export default {
 </script>
 
 <style scoped>
+button:hover {
+  cursor: pointer;
+}
 h1 {
   text-align: center;
   color: white;
